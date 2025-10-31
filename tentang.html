@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tentang Kami – Sejucara</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
+  <style>
+    .font-bagel { font-family: 'Bagel Fat One', cursive; }
+  </style>
+</head>
+
+<body class="bg-amber-50 text-stone-900 font-sans">
+
+  <!-- Navbar -->
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur shadow-sm">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 py-3">
+    
+    <!-- Logo -->
+    <a href="index.html" class="flex items-center gap-2">
+      <img src="assets/logosc2.png" alt="Sejucara Logo" class="h-10 w-10 rounded-xl border border-amber-200">
+      <span class="font-bagel text-2xl text-amber-800 tracking-wide">sejucara</span>
+    </a>
+
+    <!-- Menu Desktop -->
+    <nav class="hidden md:flex gap-6 text-sm font-medium">
+      <a href="index.html" class="hover:text-amber-700">Beranda</a>
+      <a href="tentang.html" class="text-amber-700 border-b-2 border-amber-600 pb-1">Tentang</a>
+      <a href="produk.html" class="hover:text-amber-700">Produk</a>
+      <a href="kontak.html" class="hover:text-amber-700">Kontak</a>
+      <a href="https://wa.me/6281318360478?text=Halo%20Sejucara" target="_blank"
+         class="bg-amber-600 text-white px-4 py-2 rounded-xl hover:bg-amber-700 transition">
+        Pesan
+      </a>
+    </nav>
+
+    <!-- Tombol Mobile -->
+    <button id="menu-btn" class="md:hidden p-2 border border-amber-400 rounded-lg text-amber-700">
+      ☰
+    </button>
+  </div>
+
+  <!-- Menu Mobile -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-amber-200">
+    <nav class="flex flex-col text-center py-4 space-y-3">
+      <a href="index.html" class="hover:text-amber-700">Beranda</a>
+      <a href="tentang.html" class="text-amber-700 font-semibold">Tentang</a>
+      <a href="produk.html" class="hover:text-amber-700">Produk</a>
+      <a href="kontak.html" class="hover:text-amber-700">Kontak</a>
+      <a href="https://wa.me/6281318360478?text=Halo%20Sejucara" target="_blank"
+         class="bg-amber-600 text-white px-4 py-2 mx-auto w-2/3 rounded-xl">
+        Pesan Sekarang
+      </a>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
+
+  <!-- Hero Section -->
+  <section class="relative flex flex-col items-center justify-center text-center overflow-hidden min-h-[80vh]">
+    <img src="assets/bgtg.jpg" alt="Kulit kopi background" class="absolute inset-0 w-full h-full object-cover opacity-70 scale-105">
+    <div class="absolute inset-0 bg-gradient-to-b from-amber-50/60 via-amber-50/70 to-amber-50/90"></div>
+
+    <div class="relative z-10 px-6">
+      <h1 class="text-5xl md:text-6xl font-bagel text-amber-900 drop-shadow-md">Tentang Kami</h1>
+      <p class="mt-6 text-lg md:text-xl text-stone-800 leading-relaxed max-w-2xl mx-auto">
+        Dari kulit kopi yang sering terbuang, kami menciptakan kebaikan baru <span class="font-semibold text-amber-800">Sejucara</span>, minuman alami yang menyegarkan dan bernilai.
+      </p>
+    </div>
+  </section>
+
+  <!-- Cerita Kami -->
+  <section id="cerita" class="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+    <img src="assets/ceritasc.jpg" alt="Proses cascara" class="rounded-2xl shadow-lg hover:scale-105 transition-transform duration-500">
+    <div>
+      <h2 class="text-3xl font-bagel text-amber-900 mb-4">Cerita Kami</h2>
+      <p class="text-stone-700 leading-relaxed">
+        Sejucara berawal dari sebuah inovasi dalam program <span class="font-semibold text-amber-800">Kuliah Kerja Nyata (KKN)</span>. Saat itu, kami menemukan masalah limbah kulit kopi yang menumpuk dan tidak dimanfaatkan oleh masyarakat di desa tempat kami mengabdi.
+      </p>
+      <p class="mt-4 text-stone-700 leading-relaxed">
+        Dari permasalahan tersebut, kami berupaya mencari solusi yang bermanfaat dan berkelanjutan. Kami menemukan potensi luar biasa dari kulit kopi yang ternyata dapat diolah menjadi <span class="font-semibold text-amber-800">minuman cascara</span> — kaya rasa, menyehatkan, dan ramah lingkungan.
+      </p>
+      <p class="mt-4 text-stone-700 leading-relaxed">
+        Dengan semangat keberlanjutan, kami melanjutkan perjalanan ini bersama petani lokal untuk mengurangi limbah, memberikan nilai tambah bagi hasil panen, dan menghadirkan minuman yang membawa kebaikan bagi manusia dan bumi.
+      </p>
+    </div>
+  </section>
+
+  <!-- Visi & Misi -->
+  <section class="bg-amber-100/60 py-20">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bagel text-amber-900 mb-10">Visi & Misi</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white p-8 rounded-2xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-semibold text-amber-800 mb-3">🌿 Visi</h3>
+          <p class="text-stone-700">
+            Menjadi pelopor minuman cascara yang mendukung gaya hidup sehat, ramah lingkungan, dan meningkatkan kesejahteraan petani lokal.
+          </p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow hover:shadow-lg transition text-left">
+          <h3 class="text-xl font-semibold text-amber-800 mb-3">🌸 Misi</h3>
+          <ul class="list-disc list-inside space-y-2 text-stone-700">
+            <li>Mengolah limbah kulit kopi menjadi produk bernilai tinggi.</li>
+            <li>Memberdayakan petani lokal secara berkelanjutan.</li>
+            <li>Mengedukasi masyarakat tentang manfaat cascara.</li>
+            <li>Menghadirkan cita rasa alami dengan kualitas terbaik.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tim Kami -->
+  <section class="max-w-7xl mx-auto px-6 py-20 text-center">
+    <h2 class="text-3xl font-bagel text-amber-900 mb-8">Tim Kami</h2>
+    <p class="text-stone-600 mb-12 text-lg">Berkenalan dengan orang-orang di balik perjalanan Sejucara</p>
+    
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8 justify-items-center">
+      <!-- 10 Anggota Tim -->
+      <template id="team-template"></template>
+      <script>
+        const team = [
+          { nama: "Arno Alam", jabatan: "CEO", foto: "assets/team/arno.png" },
+          { nama: "Irpan Rahmani", jabatan: "Direktur", foto: "assets/team/abi.png" },
+          { nama: "Salsabila", jabatan: "Produksi", foto: "assets/team/caca.png" },
+          { nama: "Siska Wulandari", jabatan: "Produksi", foto: "assets/team/siska.png" },
+          { nama: "Tanti Arimbi", jabatan: "Marketing", foto: "assets/team/tanti.png" },
+          { nama: "Anisa Nurjanah", jabatan: "Marketing", foto: "assets/team/ninis.png" },
+          { nama: "Rifqi Aini", jabatan: "Keuangan", foto: "assets/team/ain.png" },
+          { nama: "Sulfan Hedi", jabatan: "Keuangan", foto: "assets/team/sulfan.png" },
+          { nama: "Ibrahim Aliyan", jabatan: "Media Kreatif", foto: "assets/team/baim.png" },
+          { nama: "Rida Nurfaridah", jabatan: "Media Kreatif", foto: "assets/team/rida.png" },
+        ];
+
+        const container = document.currentScript.previousElementSibling;
+        team.forEach(member => {
+          const div = document.createElement('div');
+          div.className = "bg-amber-50 rounded-2xl shadow hover:shadow-lg transition p-6 flex flex-col items-center text-center hover:-translate-y-1 duration-300";
+          div.innerHTML = `
+            <img src="${member.foto}" class="w-28 h-28 rounded-full object-cover border-4 border-amber-200 shadow">
+            <h4 class="mt-4 font-semibold text-amber-900">${member.nama}</h4>
+            <p class="text-sm text-stone-600">${member.jabatan}</p>
+          `;
+          container.before(div);
+        });
+      </script>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-amber-900 text-amber-100 pt-16 pb-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-3 gap-10 text-center md:text-left">
+      <div>
+        <div class="flex items-center justify-center md:justify-start gap-3 mb-4">
+          <img src="assets/logosc2.png" alt="Logo Sejucara" class="h-12 w-12 rounded-xl border border-amber-700 bg-amber-800/40 p-1">
+          <h3 class="font-bagel text-2xl text-white">sejucara</h3>
+        </div>
+        <p class="text-amber-200 text-sm leading-relaxed">
+          Hadirkan kesegaran alami dalam setiap tegukan. Sejucara, minuman tradisional dengan sentuhan modern khas Nusantara.
+        </p>
+      </div>
+      <div>
+        <h4 class="font-bagel text-lg text-white mb-3">Navigasi</h4>
+        <ul class="space-y-2 text-amber-200 text-sm">
+          <li><a href="index.html" class="hover:text-white transition">Beranda</a></li>
+          <li><a href="tentang.html" class="hover:text-white transition">Tentang</a></li>
+          <li><a href="produk.html" class="hover:text-white transition">Produk</a></li>
+          <li><a href="kontak.html" class="hover:text-white transition">Kontak</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bagel text-lg text-white mb-3">Hubungi Kami</h4>
+        <ul class="space-y-2 text-amber-200 text-sm">
+          <li>✉️ <a href="mailto:kkn26girimulya2@gmail.com" class="hover:text-white transition">kkn26girimulya2@gmail.com</a></li>
+          <li>📞 <a href="tel:+6281318360478" class="hover:text-white transition">+62 813-1836-0478</a></li>
+          <li>💬 <a href="https://wa.me/6281318360478" target="_blank" class="hover:text-white transition">Chat via WhatsApp</a></li>
+          <li>📸 <a href="https://instagram.com/sejucara" target="_blank" class="hover:text-white transition">@sejucara</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-12 border-t border-amber-700 pt-6 text-center text-xs text-amber-300">
+      © 2025 <span class="font-bagel text-white">sejucara</span>. Semua Hak Dilindungi.
+    </div>
+  </footer>
+
+</body>
+</html>

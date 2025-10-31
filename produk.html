@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produk – Sejucara</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&display=swap" rel="stylesheet">
+  <style>
+    .font-bagel {
+      font-family: 'Bagel Fat One', cursive;
+    }
+  </style>
+</head>
+<body class="bg-amber-50 text-stone-900 font-sans">
+
+ <!-- Navbar -->
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur shadow-sm">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-4 sm:px-6 py-3">
+    
+    <!-- Logo -->
+    <a href="index.html" class="flex items-center gap-2">
+      <img src="assets/logosc2.png" alt="Sejucara Logo" class="h-10 w-10 rounded-xl border border-amber-200">
+      <span class="font-bagel text-2xl text-amber-800 tracking-wide">sejucara</span>
+    </a>
+
+    <!-- Menu Desktop -->
+    <nav class="hidden md:flex gap-6 text-sm font-medium">
+      <a href="index.html" class="hover:text-amber-700">Beranda</a>
+      <a href="tentang.html" class="hover:text-amber-700">Tentang</a>
+      <a href="produk.html" class="text-amber-700 border-b-2 border-amber-600 pb-1">Produk</a>
+      <a href="kontak.html" class="hover:text-amber-700">Kontak</a>
+      <a href="https://wa.me/6281318360478?text=Halo%20Sejucara" target="_blank"
+         class="bg-amber-600 text-white px-4 py-2 rounded-xl hover:bg-amber-700 transition">
+        Pesan
+      </a>
+    </nav>
+
+    <!-- Tombol Mobile -->
+    <button id="menu-btn" class="md:hidden p-2 border border-amber-400 rounded-lg text-amber-700">
+      ☰
+    </button>
+  </div>
+
+  <!-- Menu Mobile -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-amber-200">
+    <nav class="flex flex-col text-center py-4 space-y-3">
+      <a href="index.html" class="hover:text-amber-700">Beranda</a>
+      <a href="tentang.html" class="hover:text-amber-700">Tentang</a>
+      <a href="produk.html" class="text-amber-700 font-semibold">Produk</a>
+      <a href="kontak.html" class="hover:text-amber-700">Kontak</a>
+      <a href="https://wa.me/6281318360478?text=Halo%20Sejucara" target="_blank"
+         class="bg-amber-600 text-white px-4 py-2 mx-auto w-2/3 rounded-xl">
+        Pesan Sekarang
+      </a>
+    </nav>
+  </div>
+</header>
+
+<script>
+  const menuBtn = document.getElementById("menu-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+  });
+</script>
+
+  <!-- Hero Section -->
+  <section class="relative flex flex-col items-center justify-center text-center min-h-[80vh] overflow-hidden">
+    <!-- Background foto kulit kopi -->
+    <img src="assets/bgpr.jpg" alt="Background Kulit Kopi" 
+     class="absolute inset-0 w-full h-full object-cover object-center opacity-70 scale-110">
+    <div class="absolute inset-0 bg-gradient-to-b from-amber-50/70 via-amber-50/50 to-amber-50/90"></div>
+    <div class="relative z-10">
+      <h1 class="text-5xl md:text-6xl font-bagel text-amber-900 drop-shadow-lg">Produk Sejucara</h1>
+      <p class="mt-4 text-lg md:text-xl text-stone-800 max-w-2xl mx-auto">
+        Jelajahi berbagai varian cascara kami nikmat, sehat, dan ramah lingkungan.
+      </p>
+    </div>
+  </section>
+
+  <!-- Divider wave -->
+  <div class="relative">
+    <svg class="absolute top-0 w-full" viewBox="0 0 1440 120"><path fill="#fff8e1" d="M0,64L48,85.3C96,107,192,149,288,144C384,139,480,85,576,64C672,43,768,53,864,80C960,107,1056,149,1152,165.3C1248,181,1344,171,1392,165.3L1440,160V0H0Z"></path></svg>
+  </div>
+
+  <!-- Daftar Produk -->
+  <section class="relative bg-[#fff8e1] py-24">
+    <div class="max-w-7xl mx-auto px-6 grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+      <!-- Produk Card -->
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden hover:-translate-y-2 duration-300">
+        <img src="assets/pouch.jpg" alt="Cascara Botol" class="h-56 w-full object-cover">
+        <div class="p-5 text-center">
+          <h3 class="font-semibold text-lg text-amber-900">Cascara Original</h3>
+          <p class="text-sm text-stone-600 mt-1">18gr</p>
+          <p class="text-amber-700 font-bold mt-2">Mulai dari 20K</p>
+          <a href="https://wa.me/6281318360478?text=Halo%20Sejucara%2C%20saya%20ingin%20pesan%20Cascara%20Original" 
+             target="_blank"
+             class="mt-4 inline-block bg-amber-600 text-white px-4 py-2 rounded-xl hover:bg-amber-700 transition">
+            Pesan Sekarang
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden hover:-translate-y-2 duration-300">
+        <img src="assets/botol.jpg" alt="Cascara Botol" class="h-56 w-full object-cover">
+        <div class="p-5 text-center">
+          <h3 class="font-semibold text-lg text-amber-900">Botol</h3>
+          <p class="text-sm text-stone-600 mt-1">20gr</p>
+          <p class="text-amber-700 font-bold mt-2">Mulai dari 25K</p>
+          <a href="https://wa.me/6281318360478?text=Halo%20Sejucara%2C%20saya%20ingin%20pesan%20Cascara%20Botol" 
+             target="_blank"
+             class="mt-4 inline-block bg-amber-600 text-white px-4 py-2 rounded-xl hover:bg-amber-700 transition">
+            Pesan Sekarang
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden hover:-translate-y-2 duration-300">
+        <img src="assets/pouchrempah3.jpg" alt="Cascara Botol" class="h-56 w-full object-cover">
+        <div class="p-5 text-center">
+          <h3 class="font-semibold text-lg text-amber-900">Cascara Pouch + Rempah</h3>
+          <p class="text-sm text-stone-600 mt-1">Dengan tambahan rempah alami</p>
+          <p class="text-amber-700 font-bold mt-2">Mulai dari 25K</p>
+          <a href="https://wa.me/6281318360478?text=Halo%20Sejucara%2C%20saya%20ingin%20pesan%20Cascara%20Pouch%20%2B%20Rempah" 
+             target="_blank"
+             class="mt-4 inline-block bg-amber-600 text-white px-4 py-2 rounded-xl hover:bg-amber-700 transition">
+            Pesan Sekarang
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden hover:-translate-y-2 duration-300">
+        <img src="assets/botolrempah.jpg" alt="Cascara Botol" class="h-56 w-full object-cover">
+        <div class="p-5 text-center">
+          <h3 class="font-semibold text-lg text-amber-900">Cascara Botol + Rempah</h3>
+          <p class="text-sm text-stone-600 mt-1">Dengan tambahan rempah alami</p>
+          <p class="text-amber-700 font-bold mt-2">Mulai dari 30K</p>
+          <a href="https://wa.me/6281318360478?text=Halo%20Sejucara%2C%20saya%20ingin%20pesan%20Cascara%20Botol%20%2B%20Rempah" 
+             target="_blank"
+             class="mt-4 inline-block bg-amber-600 text-white px-4 py-2 rounded-xl hover:bg-amber-700 transition">
+            Pesan Sekarang
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Info Tambahan -->
+  <section class="relative bg-gradient-to-b from-amber-50 to-white py-20">
+    <div class="max-w-4xl mx-auto text-center px-6">
+      <h2 class="text-3xl font-bagel text-amber-900 mb-4">Kualitas Terbaik dari Petani Lokal</h2>
+      <p class="text-stone-700 leading-relaxed">
+        Semua produk Sejucara diolah langsung dari kulit buah kopi pilihan oleh petani lokal Indonesia.
+        Kami memastikan setiap produk dikeringkan dengan proses alami untuk menjaga rasa, aroma, dan manfaat antioksidan alami dari cascara.
+      </p>
+    </div>
+  </section>
+
+  <<!-- Footer -->
+  <footer class="bg-amber-900 text-amber-100 pt-16 pb-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid md:grid-cols-3 gap-10 text-center md:text-left">
+      <div>
+        <div class="flex items-center justify-center md:justify-start gap-3 mb-4">
+          <img src="assets/logosc2.png" alt="Logo Sejucara" class="h-12 w-12 rounded-xl border border-amber-700 bg-amber-800/40 p-1">
+          <h3 class="font-bagel text-2xl text-white">sejucara</h3>
+        </div>
+        <p class="text-amber-200 text-sm leading-relaxed">
+          Hadirkan kesegaran alami dalam setiap tegukan. Sejucara, minuman tradisional dengan sentuhan modern khas Nusantara.
+        </p>
+      </div>
+      <div>
+        <h4 class="font-bagel text-lg text-white mb-3">Navigasi</h4>
+        <ul class="space-y-2 text-amber-200 text-sm">
+          <li><a href="index.html" class="hover:text-white transition">Beranda</a></li>
+          <li><a href="tentang.html" class="hover:text-white transition">Tentang</a></li>
+          <li><a href="produk.html" class="hover:text-white transition">Produk</a></li>
+          <li><a href="kontak.html" class="hover:text-white transition">Kontak</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bagel text-lg text-white mb-3">Hubungi Kami</h4>
+        <ul class="space-y-2 text-amber-200 text-sm">
+          <li>✉️ <a href="mailto:kkn26girimulya2@gmail.com" class="hover:text-white transition">kkn26girimulya2@gmail.com</a></li>
+          <li>📞 <a href="tel:+6281318360478" class="hover:text-white transition">+62 813-1836-0478</a></li>
+          <li>💬 <a href="https://wa.me/6281318360478" target="_blank" class="hover:text-white transition">Chat via WhatsApp</a></li>
+          <li>📸 <a href="https://instagram.com/sejucara" target="_blank" class="hover:text-white transition">@sejucara</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-12 border-t border-amber-700 pt-6 text-center text-xs text-amber-300">
+      © 2025 <span class="font-bagel text-white">sejucara</span>. Semua Hak Dilindungi.
+    </div>
+  </footer>
+
+</body>
+</html>
